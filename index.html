@@ -15,16 +15,24 @@
                Please Skip It By Answering "No". Every Answer would Be Very Appreciated. Thank You For Your Time.
             </p>
             </header>
+            
             <main class="sections">
+                
                 <section class="section1">
+                    <div>
                     <label>Your Name</label><br>
-                    <input type="text" placeholder="Enter your name" /> <br/>
-
+                    <input type="text" placeholder="Enter your name" />
+                    </div>
+                    
+                    <div>
                     <label>Your Email Address</label><br>
                     <input type="text" placeholder="user@user.com" /> <br/>
+                    </div>
 
+                    <div>
                     <label>Your Phone Number</label><br>
                     <input type="text" placeholder="000000000000" /> <br/>
+                    </div>
 
                     <label for="city">Where Do You Live?</label><br>
                     <select>
@@ -35,48 +43,80 @@
                     </select>
                         <fieldset>
                             <legend>age:</legend>
-                            <input type="radio" id="age1" name="age" value="30">
-                            <label for="age1">18 - 20</label><br>
-                            <input type="radio" id="age2" name="age" value="60">
-                            <label for="age2">21 - 30</label><br>  
-                            <input type="radio" id="age3" name="age" value="100">
-                            <label for="age3">31 - 40</label><br>
-                            <input type="radio" id="age3" name="age" value="100">
-                            <label for="age3">41 - 50</label><br>
-                            <input type="radio" id="age3" name="age" value="100">
-                            <label for="age3">Prefer not to say</label><br>
+                            
+                            <div>
+                            <input type="radio" id="age1" name="age">
+                            <label for="age1">18 - 20</label>
+                            </div>
+                            
+                            <div>
+                            <input type="radio" id="age2" name="age">
+                            <label for="age2">21 - 30</label>
+                            </div>
+                            
+                            <div>
+                            <input type="radio" id="age3" name="age">
+                            <label for="age3">31 - 40</label>
+                            </div>
+
+                            <div>
+                            <input type="radio" id="age3" name="age">
+                            <label for="age3">41 - 50</label>
+                            </div>
+
+                            <div>
+                            <input type="radio" id="age3" name="age">
+                            <label for="age3">Prefer not to say</label>
+                            </div>
                         </fieldset>
 
                     <p>How would you rate your proficiency in coding</p>
-                    <input type="radio" />
-                    <label for="">Beginner</label><br>
+                    <div>
+                    <input type="radio" id="beginner" name="proficiency"/>
+                    <label for="beginner">Beginner</label>
+                    </div>
 
-                    <input type="radio" />
-                    <label for="">Intermediate</label><br>
+                    <div>
+                    <input type="radio" id="intermediate" name="proficiency" checked/>
+                    <label for="intermediate">Intermediate</label>
+                    </div>
 
-                    <input type="radio" />
-                    <label for="">Advance</label>
+                    <div>
+                    <input type="radio" id="advance" name="proficiency"/>
+                    <label for="advance">Advance</label>
+                    </div>
 
 
                 </section>
                 <section class="section2">
                     <p>Have you ever appeared in coding contest</p>
-                    <input type="radio">
-                    <label for="">Yes</label><br>
+                    
+                    <div>
+                    <input type="radio" id="yes" name="contest"/>
+                    <label for="yes">Yes</label>
+                    </div>
 
-                    <input type="radio">
-                    <label for="">No</label>
+                    <div>
+                    <input type="radio" id="no"  name="contest"/>
+                    <label for="no">No</label>
+                    </div>
 
+                    <div style="padding-right:2rem">
                     <p>Discuss what drives your passion for coding and outline your aspiration in the field</p>
-                    <textarea></textarea>
+                    <textarea id="passion"></textarea>
+                    </div>
 
+                    <div>
                     <p>What are some of the chanlleges you face while coding?</p>
-                    <textarea name="" id=""></textarea><br>
-
+                    <textarea name="" id="challenges"></textarea><br>
+                    </div>
+                    
+                    <div>
                     <p>Please list the Data Structures you have a strong understanding of</p>
-                    <textarea></textarea>
-
-                    <button>Submit Form</button>
+                    <textarea id="understanding"></textarea>
+                    </div>
+                    
+                    <button type="submit">Submit Form</button>
                 </section>
             
             </main>
