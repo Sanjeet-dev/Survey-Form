@@ -1,128 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
     <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="centeredContainer">
-            <header>
-            <h1>Survey Form</h1>
-            <p>Feel Free To Answer The Questions Below Based On Your Experience And Opinion. If You are Not Convenient In Answer A Particular Question <br />
-               Please Skip It By Answering "No". Every Answer would Be Very Appreciated. Thank You For Your Time.
+      <div class="centeredContainer">
+        <header>
+          <h1>Survey Form</h1>
+          <p>
+            Feel Free To Answer The Questions Below Based On Your Experience And
+            Opinion. If You are Not Convenient In Answer A Particular Question
+            <br />
+            Please Skip It By Answering "No". Every Answer would Be Very
+            Appreciated. Thank You For Your Time.
+          </p>
+        </header>
+        <main class="sections">
+          <section class="section1">
+            <div>
+              <label>Your Name</label><br />
+              <input type="text" placeholder="Enter your name" />
+            </div>
+
+            <div>
+              <label>Your Email Address</label><br />
+              <input type="text" placeholder="user@user.com" /> <br />
+            </div>
+
+            <div>
+              <label>Your Phone Number</label><br />
+              <input type="text" placeholder="000000000000" /> <br />
+            </div>
+            <div>
+              <label for="city">Where Do You Live?</label><br />
+              <select>
+                <option>Delhi</option>
+                <option>Gurgaon</option>
+                <option>Varanasi</option>
+                <option>Noida</option>
+              </select>
+            </div>
+            <fieldset>
+              <legend>age:</legend>
+              <div class="age-container">
+              <div>
+              <input type="radio" id="age1" name="age" value="30" />
+              <label for="age1">18 - 20</label><br />
+              </div>
+              <div>
+              <input type="radio" id="age2" name="age" value="60" />
+              <label for="age2">21 - 30</label><br />
+              </div>
+              <div>
+              <input type="radio" id="age3" name="age" value="100" />
+              <label for="age3">31 - 40</label><br />
+              </div>
+
+              <div>
+              <input type="radio" id="age3" name="age" value="100" />
+              <label for="age3">41 - 50</label><br />
+              </div>
+              <div>
+              <input type="radio" id="age3" name="age" value="100" />
+              <label for="age3">Prefer not to say</label><br />
+              </div>
+              </div>
+            </fieldset>
+
+            <p>How would you rate your proficiency in coding</p>
+            <input type="radio" name="proficiency"/>
+            <label for="">Beginner</label><br />
+
+            <input type="radio" name="proficiency" checked/>
+            <label for="">Intermediate</label><br />
+
+            <input type="radio" name="proficiency"/>
+            <label for="">Advance</label>
+          </section>
+          <section class="section2">
+            <p>Have you ever appeared in coding contest</p>
+            <input type="radio" name="contest"/>
+            <label for="">Yes</label><br />
+
+            <input type="radio" name="contest"/>
+            <label for="">No</label>
+
+            <p>
+              Discuss what drives your passion for coding and outline your
+              aspiration in the field
             </p>
-            </header>
-            
-            <main class="sections">
-                
-                <section class="section1">
-                    <div>
-                    <label>Your Name</label><br>
-                    <input type="text" placeholder="Enter your name" />
-                    </div>
-                    
-                    <div>
-                    <label>Your Email Address</label><br>
-                    <input type="text" placeholder="user@user.com" /> <br/>
-                    </div>
+            <textarea></textarea>
 
-                    <div>
-                    <label>Your Phone Number</label><br>
-                    <input type="text" placeholder="000000000000" /> <br/>
-                    </div>
+            <p>What are some of the chanlleges you face while coding?</p>
+            <textarea name="challenges" id=""></textarea><br />
 
-                    <label for="city">Where Do You Live?</label><br>
-                    <select>
-                        <option>Delhi</option>
-                        <option>Gurgaon</option>
-                        <option>Varanasi</option>
-                        <option>Noida</option>
-                    </select>
-                        <fieldset>
-                            <legend>age:</legend>
-                            
-                            <div>
-                            <input type="radio" id="age1" name="age">
-                            <label for="age1">18 - 20</label>
-                            </div>
-                            
-                            <div>
-                            <input type="radio" id="age2" name="age">
-                            <label for="age2">21 - 30</label>
-                            </div>
-                            
-                            <div>
-                            <input type="radio" id="age3" name="age">
-                            <label for="age3">31 - 40</label>
-                            </div>
+            <p>
+              Please list the Data Structures you have a strong understanding of
+            </p>
+            <textarea id="understanding"></textarea>
 
-                            <div>
-                            <input type="radio" id="age3" name="age">
-                            <label for="age3">41 - 50</label>
-                            </div>
-
-                            <div>
-                            <input type="radio" id="age3" name="age">
-                            <label for="age3">Prefer not to say</label>
-                            </div>
-                        </fieldset>
-
-                    <p>How would you rate your proficiency in coding</p>
-                    <div>
-                    <input type="radio" id="beginner" name="proficiency"/>
-                    <label for="beginner">Beginner</label>
-                    </div>
-
-                    <div>
-                    <input type="radio" id="intermediate" name="proficiency" checked/>
-                    <label for="intermediate">Intermediate</label>
-                    </div>
-
-                    <div>
-                    <input type="radio" id="advance" name="proficiency"/>
-                    <label for="advance">Advance</label>
-                    </div>
-
-
-                </section>
-                <section class="section2">
-                    <p>Have you ever appeared in coding contest</p>
-                    
-                    <div>
-                    <input type="radio" id="yes" name="contest"/>
-                    <label for="yes">Yes</label>
-                    </div>
-
-                    <div>
-                    <input type="radio" id="no"  name="contest"/>
-                    <label for="no">No</label>
-                    </div>
-
-                    <div style="padding-right:2rem">
-                    <p>Discuss what drives your passion for coding and outline your aspiration in the field</p>
-                    <textarea id="passion"></textarea>
-                    </div>
-
-                    <div>
-                    <p>What are some of the chanlleges you face while coding?</p>
-                    <textarea name="" id="challenges"></textarea><br>
-                    </div>
-                    
-                    <div>
-                    <p>Please list the Data Structures you have a strong understanding of</p>
-                    <textarea id="understanding"></textarea>
-                    </div>
-                    
-                    <button type="submit">Submit Form</button>
-                </section>
-            
-            </main>
-
-        </div>
+            <button>Submit Form</button>
+          </section>
+        </main>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>

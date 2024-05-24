@@ -7,9 +7,6 @@
 body{
     width:100vw;
     height:100vh;
-    font:
-    1rem 'Fira Sans',
-    sans-serif;
 }
 
 .container{
@@ -20,40 +17,12 @@ body{
     justify-content: center;
     background-color: lightgreen;
 }
-header{
-    margin-bottom:7px;
-}
-header h1{
-    color:red;
-    margin:5px 0 10px 0;
-}
-
-fleldset{
-    margin:5px 0 10px 0;
-}
-label {
-  font:
-    1rem 'Fira Sans',
-    sans-serif;
-    font-weight:bold;
-
-}
-
-input {
-  margin: 0.4rem;
-  padding-left:1rem;
-  width:max-content;
-  height:1.5rem;
-  border-radius: 4px;
-  outline:none;
-  border:1.5px solid black;
-}
-
 
 .centeredContainer{
     margin:10px;
     padding:12px;
-    width:95%;
+    height:90%;
+    width:90%;
     background-color:white;
 }
 .sections{
@@ -62,23 +31,22 @@ input {
     justify-content:space-between;
 
 }
-textarea{
-    height:5rem;
-    width:23rem;
-    border:1.5px solid rgb(163, 118, 3);
-    margin-bottom:5px;
-    outline:none;
-    padding-left:3px;
-    color:black;
-    letter-spacing:0.5px;
-    font-size:18px;
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
 }
-button{
-    height:2rem;
-    width: 25rem;
-    background-color: rgb(230, 41, 41);
-    color:white;
-    border:none;
-    border-radius:5px;
-    margin-top:5px;
+
+legend {
+    font-weight: bold;
+    padding-left:25px;
+}
+.age-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.age-container label {
+    flex: 1 1 45%; /* Adjust the width to fit two items per row */
+    box-sizing: border-box;
 }
