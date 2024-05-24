@@ -1,5 +1,5 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing:border-box;
 }
@@ -7,6 +7,7 @@
 body{
     width:100vw;
     height:100vh;
+    font-family: Arial, sans-serif;
 }
 
 .container{
@@ -21,15 +22,60 @@ body{
 .centeredContainer{
     margin:10px;
     padding:12px;
-    height:90%;
+    height:95%;
     width:90%;
     background-color:white;
+    border-radius:10px;
+}
+header h1{
+    color:red;
+    margin:5px auto;
+}
+header p{
+    margin:10px 0 6px 0;
 }
 .sections{
     display:flex;
     align-items:center;
-    justify-content:space-between;
+    justify-content: space-between;
+    margin-top:4px;
 
+}
+.section2{
+    width:48%;
+}
+.sections p{
+    font-size: 16px;
+    font-weight:600;
+    margin:7px 0 4px 0;
+}
+label{
+    font-weight:bold;
+    margin:3px 0 3px 0;
+}
+
+/* inputs for basic information like name,phone and email */
+.info{
+    outline:none;
+    height:2rem;
+    width:22rem;
+    border:1px solid #ccc;
+    padding-left:5px;
+    margin-bottom:5px;
+}
+
+/* inputs for radio button */
+
+textarea{
+    outline:none;
+    border:1px solid #ccc;
+    width:23rem;
+    height:4rem;
+    padding-left:5px;
+    font-weight:500;
+    font-size:15px;
+    color:darkslategray;
+    margin:3px;
 }
 fieldset {
     border: 1px solid #ccc;
@@ -43,10 +89,40 @@ legend {
 .age-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap:1rem;
+    justify-content: space-evenly;
 }
+.age-container .part1{
+    display:flex;
+    flex-direction:column
+}
+.age-container .part2{
+    display:flex;
+    flex-direction:column
+}
+
 
 .age-container label {
     flex: 1 1 45%; /* Adjust the width to fit two items per row */
     box-sizing: border-box;
 }
+
+button{
+    height:2rem;
+    width:25rem;
+    background-color:rgb(233, 47, 47);
+    cursor:pointer;
+    border-radius:7px;
+    font-size:large;
+    letter-spacing:0.8px;
+    color:white;
+}
+@media screen and (max-width:768px){
+    .sections{
+        flex-direction:column;
+    }
+    button{
+        width:15rem;
+    }
+}
+    
