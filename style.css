@@ -41,6 +41,9 @@ header p{
     margin-top:4px;
 
 }
+.section1{
+    margin-top:5px;
+}
 .section2{
     width:48%;
 }
@@ -109,7 +112,7 @@ legend {
 
 button{
     height:2rem;
-    width:25rem;
+    width:28rem;
     background-color:rgb(233, 47, 47);
     cursor:pointer;
     border-radius:7px;
