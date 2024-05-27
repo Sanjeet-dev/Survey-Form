@@ -27,6 +27,14 @@ body{
     background-color:white;
     border-radius:10px;
 }
+header {
+    position: sticky;
+    top: 0;
+    background-color: white; /* Same as container background to blend */
+    z-index: 10;
+    padding-top: 12px;
+}
+
 header h1{
     color:red;
     margin:5px auto;
@@ -122,12 +130,24 @@ button{
     letter-spacing:0.8px;
     color:white;
 }
-@media screen and (max-width:768px){
-    .sections{
-        flex-direction:column;
+@media screen and (max-width: 768px) {
+    .centeredContainer {
+        height: auto; /* Adjust height to auto to fit content */
+        width: 95%;
+        max-height: 100vh; /* Ensure container doesn't exceed viewport height */
     }
-    button{
-        width:15rem;
+
+    .sections {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section1, .section2 {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
     }
 }
     
